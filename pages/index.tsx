@@ -16,7 +16,7 @@ export default function Home({ })
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex-col content-center flex-1 items-center' x-data="{details: false}" >
-        <div className='h-screen lg:w-screen flex items-center z-10'>
+        <div className=' bg-black h-screen lg:w-screen flex items-center z-10'>
           <iframe src='https://my.spline.design/floppydiskcopy-48e877525c571964c62e09fffcf22477/' frameBorder='0' width='100%' height='100%'></iframe>
           <p onClick={() =>
           {
@@ -33,7 +33,7 @@ export default function Home({ })
               <div className='flex text-4xl mx-4 '>I'm <p className='text-green-500 mx-2 font-bold'> Roger</p> <p className='font-bold'>Siver,</p></div>
               <img className=' float-right rounded-full' src='https://avatars.githubusercontent.com/u/21316328?v=4' width='150px' />
 
-              <p className=' float-none text-base leading-relaxed mt-4 mx-4 mb-4 '>I'm a full stack web developer, software engineer, motion graphic designer, and event industry AV Tech/Production Manager. I come up with complete solutions for tough problems and deliver bespoke customer experiences. From lightshows & creative experiences to websites and full-stack software, I can help. I'm available via e-mail, and the rest of my info can be found on my CV.</p>
+              <p className=' float-none text-base leading-relaxed mt-4 mx-4 mb-4 '>I'm a full stack web developer, software engineer, motion graphic designer, and event industry AV Tech/Production Manager. I come up with complete solutions for tough problems and deliver bespoke customer experiences. From lightshows & creative visuals to websites and full-stack software, I can help. I'm available via e-mail, and the rest of my info can be found on my CV.</p>
             </div>
             <div className='grid gap-2 sm:grid-cols-1 lg:grid-cols-3 place-items-center mx-6'>
               <div className='w-full px-6 bg-zinc-700 rounded-2xl'>
@@ -58,7 +58,7 @@ export default function Home({ })
               <p onClick={() =>
               {
                 scroll.scrollToTop();
-              }} className='transition ease-in-out hover:-translate-y-1 hover:scale-110 opacity-50 hover:opacity-100 duration-300 invisible lg:visible cursor-pointer text-3xl italic right-0 m-40 absolute backdrop-blur-xl p-2 rounded-lg'>☝️</p>
+              }} className='transition ease-in-out hover:-translate-y-1 hover:scale-110 opacity-50 hover:opacity-100 duration-300 invisible lg:visible cursor-pointer text-3xl italic right-0 m-40 absolute p-2 '>☝️</p>
 
             </div>
             {/* <p onClick={() =>

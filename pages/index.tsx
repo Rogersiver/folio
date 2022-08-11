@@ -27,32 +27,29 @@ export default function Home({ })
             scroll.scrollToBottom();
           }} className='visible lg:invisible cursor-pointer text-6xl italic top-0 absolute backdrop-blur-xl p-2 rounded-lg'>👇</p>
         </div>
-        <div className='flex place-content-center place-items-center justify-center bg-stone-900 m-auto h-screen w-screen pt-20 z-20'>
+        <div className='flex place-content-center place-items-center justify-center bg-zinc-900 m-auto h-screen w-screen pt-20 z-20'>
           <div className='max-w-4xl'>
             <div className='mx-4'>
-              <div className='flex text-4xl mx-4 float-left'>I'm <p className='text-green-500 mx-2 font-bold'> Roger</p> <p className='font-bold'>Siver</p></div>
+              <div className='flex text-4xl mx-4 float-left'>I'm <p className='text-green-500 mx-2 font-bold'> Roger</p> <p className='font-bold'>Siver,</p></div>
               <img className='float-right rounded-full' src='https://avatars.githubusercontent.com/u/21316328?v=4' width='100px' />
 
-              <p className=' float-none text-base leading-relaxed mt-0 mx-4 mb-4 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              <p className=' float-none text-base leading-relaxed mt-0 mx-4 mb-4 '>I'm a full stack web developer, software engineer, motion graphic designer, and event industry AV Tech/Production Manager. I come up with complete solutions for tough problems and deliver bespoke customer experiences. From lightshows + creative experiences to websites and full-stack software, I can help. I'm available via e-mail, and the rest of my info can be found on my CV.</p>
             </div>
             <div className='grid gap-2 sm:grid-cols-1 lg:grid-cols-3 place-items-center mx-6'>
-              <div className='w-full px-6 bg-stone-300 rounded-2xl'>
+              <div className='w-full px-6 bg-zinc-700 rounded-2xl'>
                 <a href='http://github.com/rogersiver' target="_blank" className='card cursor-pointer'>
                   <h2 className='font-bold'>Github</h2>
                   <p>My dotfiles, coding bootcamp projects, personal projects & explosive recipes
                   </p>
                 </a>
               </div>
-              <div className='w-full m-4 px-6 bg-stone-300 rounded-2xl'>
+              <div className='w-full m-4 px-6 bg-zinc-700 rounded-2xl'>
                 <a href='https://www.linkedin.com/in/roger-siver/' target="_blank" className='card cursor-pointer'>
                   <h2>LinkedIn</h2>
                   <p>Share nudes and meet dates with me on the absolute correct platform to do so </p>
                 </a>
               </div>
-              <div className='w-full px-6 bg-stone-300 rounded-2xl'>
+              <div className='w-full px-6 bg-zinc-700 rounded-2xl'>
                 <a href='https://www.linkedin.com/in/roger-siver/' target="_blank" className='card cursor-pointer'>
                   <h2>CV</h2>
                   <p>Make fun of my lack of experience and "gaps in work" with your co-workers</p>

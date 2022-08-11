@@ -1,0 +1,27 @@
+{
+  "name": "folio",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "version": "0.0.57",
+  "dependencies": {
+    "@types/node": "^18.7.1",
+    "autoprefixer": "^10.4.8",
+    "next": "12.2.3",
+    "postcss": "^8.4.16",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-is": "^17.0.2",
+    "react-scroll": "^1.8.7",
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "bun-framework-next": "^12",
+    "react-refresh": "0.10.0",
+    "typescript": "latest"
+  },
+  "module": "index.js"
+}

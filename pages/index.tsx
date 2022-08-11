@@ -21,13 +21,13 @@ export default function Home({ })
           <p onClick={() =>
           {
             scroll.scrollToBottom();
-          }} className='transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 invisible lg:visible opacity-50 cursor-pointer text-6xl italic m-40 sm:mb-20 absolute backdrop-blur-xl p-2 rounded-lg'>👇</p>
+          }} className='transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 invisible lg:visible opacity-50 cursor-pointer text-3xl m-40 sm:mb-20 absolute p-2'>👇</p>
           <p onClick={() =>
           {
             scroll.scrollToBottom();
-          }} className='visible lg:invisible cursor-pointer text-6xl italic top-0 absolute backdrop-blur-xl p-2 rounded-lg'>👇</p>
+          }} className='visible lg:invisible cursor-pointer text-3xl italic top-0 absolute backdrop-blur-xl p-2 rounded-lg'>👇</p>
         </div>
-        <div className='flex place-content-center place-items-center justify-center bg-zinc-900 m-auto h-screen w-screen pt-20 z-20'>
+        <div className='flex place-content-center place-items-center justify-center bg-zinc-900 m-auto h-screen w-screen'>
           <div className='max-w-3xl'>
             <div className='mx-4'>
               <div className='flex text-4xl mx-4 '>I'm <p className='text-green-500 mx-2 font-bold'> Roger</p> <p className='font-bold'>Siver,</p></div>
@@ -49,7 +49,7 @@ export default function Home({ })
                   <p>Share nudes and meet dates with me on the absolute correct platform to do so </p>
                 </a>
               </div>
-              <div className='w-full px-6 bg-zinc-700 rounded-2xl'>
+              <div className='w-full px-3 bg-zinc-700 rounded-2xl'>
                 <a href='https://www.linkedin.com/in/roger-siver/' target="_blank" className='card cursor-pointer'>
                   <h2>CV</h2>
                   <p>Make fun of my lack of experience and "gaps in work" with your co-workers</p>
@@ -58,7 +58,7 @@ export default function Home({ })
               <p onClick={() =>
               {
                 scroll.scrollToTop();
-              }} className='transition ease-in-out hover:-translate-y-1 hover:scale-110 opacity-50 hover:opacity-100 duration-300 invisible lg:visible cursor-pointer text-6xl italic right-0 m-40 absolute backdrop-blur-xl p-2 rounded-lg'>☝️</p>
+              }} className='transition ease-in-out hover:-translate-y-1 hover:scale-110 opacity-50 hover:opacity-100 duration-300 invisible lg:visible cursor-pointer text-3xl italic right-0 m-40 absolute backdrop-blur-xl p-2 rounded-lg'>☝️</p>
 
             </div>
             {/* <p onClick={() =>

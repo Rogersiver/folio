@@ -5,10 +5,10 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function Home({ })
 {
-  useEffect(() =>
-  {
-    scroll.scrollToTop();
-  }, []);
+  // useEffect(() =>
+  // {
+  //   scroll.scrollToTop();
+  // }, []);
 
   return (
     <div className={styles.container}>
@@ -72,7 +72,7 @@ export default function Home({ })
                 to websites and full-stack software, I can help.
               </p>
             </div>
-            <div className='grid gap-1 sm:grid-cols-1 lg:grid-cols-3 place-items-center mx-6'>
+            <div className='grid gap-5 sm:grid-cols-1 lg:grid-cols-3 place-items-center mx-6'>
               <div className='w-full px-6 bg-zinc-700 rounded-2xl'>
                 <a
                   href='http://github.com/rogersiver'
@@ -86,7 +86,7 @@ export default function Home({ })
                   </p>
                 </a>
               </div>
-              <div className='w-full m-4 px-6 bg-zinc-700 rounded-2xl'>
+              <div className='w-full m-2 px-6 bg-zinc-700 rounded-2xl'>
                 <a
                   href='https://www.linkedin.com/in/roger-siver/'
                   target='_blank'
@@ -95,11 +95,11 @@ export default function Home({ })
                   <h2>LinkedIn</h2>
                   <p>
                     Share nudes and meet dates with me on the absolute correct
-                    platform to do so{' '}
+                    platform{' '}
                   </p>
                 </a>
               </div>
-              <div className='w-full px-3 bg-zinc-700 rounded-2xl'>
+              <div className='w-full px-6 bg-zinc-700 rounded-2xl'>
                 <a
                   href='https://www.linkedin.com/in/roger-siver/'
                   target='_blank'
@@ -122,10 +122,6 @@ export default function Home({ })
                 ☝️
               </p>
             </div>
-            {/* <p onClick={() =>
-            {
-              scroll.scrollToTop();
-            }} className='visible lg:invisible cursor-pointer text-6xl italic relative backdrop-blur-xl p-2 rounded-lg float-right'>☝️</p> */}
           </div>
         </div>
       </main>

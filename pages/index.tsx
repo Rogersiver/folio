@@ -53,7 +53,7 @@ export default function Home({ })
         </div>
         <div className='flex sticky place-content-center place-items-center justify-center bg-zinc-900 m-auto h-screen w-screen'>
           <div className='max-w-3xl'>
-            <div className='mx-4 mt-18'>
+            <div className='mx-4 mt-20'>
               <div className='flex text-4xl mx-4 '>
                 I'm <p className='text-green-500 mx-2 font-bold'> Roger</p>{' '}
                 <p className='font-bold'>Siver,</p>
@@ -69,7 +69,7 @@ export default function Home({ })
                 graphic designer, and event industry AV Tech/Production Manager.
                 I come up with complete solutions for tough problems and deliver
                 bespoke customer experiences. From lightshows & creative visuals
-                to websites and full-stack software, I can help.
+                to websites and full-stack software, I can definitely help.
               </p>
             </div>
             <div className='grid gap-5 sm:grid-cols-1 lg:grid-cols-3 place-items-center mx-6'>

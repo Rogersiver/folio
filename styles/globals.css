@@ -13,8 +13,7 @@
     .card:hover,
     .card:focus,
     .card:active {
-        color: #39971a;
-        border-color: #39971a;
+        color: lightgreen;
     }
     .card h2 {
         margin: 0 0 1rem 0;

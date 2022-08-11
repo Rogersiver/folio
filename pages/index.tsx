@@ -28,12 +28,12 @@ export default function Home({ })
           }} className='visible lg:invisible cursor-pointer text-6xl italic top-0 absolute backdrop-blur-xl p-2 rounded-lg'>👇</p>
         </div>
         <div className='flex place-content-center place-items-center justify-center bg-zinc-900 m-auto h-screen w-screen pt-20 z-20'>
-          <div className='max-w-4xl'>
+          <div className='max-w-3xl'>
             <div className='mx-4'>
-              <div className='flex text-4xl mx-4 float-left'>I'm <p className='text-green-500 mx-2 font-bold'> Roger</p> <p className='font-bold'>Siver,</p></div>
-              <img className='float-right rounded-full' src='https://avatars.githubusercontent.com/u/21316328?v=4' width='100px' />
+              <div className='flex text-4xl mx-4 '>I'm <p className='text-green-500 mx-2 font-bold'> Roger</p> <p className='font-bold'>Siver,</p></div>
+              <img className=' float-right rounded-full' src='https://avatars.githubusercontent.com/u/21316328?v=4' width='150px' />
 
-              <p className=' float-none text-base leading-relaxed mt-0 mx-4 mb-4 '>I'm a full stack web developer, software engineer, motion graphic designer, and event industry AV Tech/Production Manager. I come up with complete solutions for tough problems and deliver bespoke customer experiences. From lightshows + creative experiences to websites and full-stack software, I can help. I'm available via e-mail, and the rest of my info can be found on my CV.</p>
+              <p className=' float-none text-base leading-relaxed mt-4 mx-4 mb-4 '>I'm a full stack web developer, software engineer, motion graphic designer, and event industry AV Tech/Production Manager. I come up with complete solutions for tough problems and deliver bespoke customer experiences. From lightshows & creative experiences to websites and full-stack software, I can help. I'm available via e-mail, and the rest of my info can be found on my CV.</p>
             </div>
             <div className='grid gap-2 sm:grid-cols-1 lg:grid-cols-3 place-items-center mx-6'>
               <div className='w-full px-6 bg-zinc-700 rounded-2xl'>

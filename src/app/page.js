@@ -23,7 +23,7 @@ export default function Home() {
         <h1
           style={{
             width: 100,
-            color: "green",
+            color: "lime",
             background: "black",
             margin: "auto",
             overflowX: "hidden",

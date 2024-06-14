@@ -1,7 +1,10 @@
 'use client';
 // pages/index.js
+import dynamic from 'next/dynamic'
 import Head from 'next/head';
-import SketchCanvas from '../components/SketchCanvas';
+//import SketchCanvas from '../components/SketchCanvas';
+
+const SketchCanvas = dynamic(() => import('../components/SketchCanvas.js'), { ssr: false })
 
 export default function Home() {
   return (

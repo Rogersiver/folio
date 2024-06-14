@@ -50,10 +50,10 @@ export default function sketch(p) {
         }
 
         let char = asciiChars[p.int(p.noise(xOff, yOff) * asciiChars.length)];
-        let col = char === "R" ? p.color(255) : p.color(100, 100, 0);
+        let col = char === "R" ? p.color(255) : p.color(255, 255, 0);
 
         if (d < 100) {
-          col = p.color(255, 255, 0); // Change color to red if close to the mouse
+          col = p.color(0, 255, 0); // Change color to green if close to the mouse
         }
 
         p.push();

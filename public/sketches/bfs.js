@@ -22,9 +22,6 @@ export default function sketch(p) {
   function Cell(i, j) {
     this.i = i;
     this.j = j;
-    this.f = 0;
-    this.g = 0;
-    this.h = 0;
     this.neighbors = [];
     this.previous = undefined;
     this.wall = false;
@@ -120,14 +117,7 @@ export default function sketch(p) {
     }
 
     if (openSet.length > 0) {
-      let winner = 0;
-      for (let i = 0; i < openSet.length; i++) {
-        if (openSet[i].f < openSet[winner].f) {
-          winner = i;
-        }
-      }
-
-      current = openSet[winner];
+      current = openSet.shift();
 
       if (goal.includes(current)) {
         if (resetTimer === -1) {
@@ -136,7 +126,6 @@ export default function sketch(p) {
         return;
       }
 
-      openSet.splice(winner, 1);
       closedSet.push(current);
 
       let neighbors = current.neighbors;
@@ -144,23 +133,8 @@ export default function sketch(p) {
         let neighbor = neighbors[i];
 
         if (!closedSet.includes(neighbor) && !neighbor.wall) {
-          let tempG = current.g + 1;
-
-          let newPath = false;
-          if (openSet.includes(neighbor)) {
-            if (tempG < neighbor.g) {
-              neighbor.g = tempG;
-              newPath = true;
-            }
-          } else {
-            neighbor.g = tempG;
-            newPath = true;
+          if (!openSet.includes(neighbor)) {
             openSet.push(neighbor);
-          }
-
-          if (newPath) {
-            neighbor.h = heuristic(neighbor, goal[0]);
-            neighbor.f = neighbor.g + neighbor.h;
             neighbor.previous = current;
           }
         }
@@ -212,11 +186,6 @@ export default function sketch(p) {
     // Show the goal with a distinct character and color
     goal.forEach((cell) => cell.show(asciiChars.goal, p.color(0, 255, 0, 255))); // Yellow
   };
-
-  function heuristic(a, b) {
-    let d = p.dist(a.i, a.j, b.i, b.j);
-    return d;
-  }
 
   p.windowResized = function() {
     p.resizeCanvas(p.windowWidth, p.windowHeight);

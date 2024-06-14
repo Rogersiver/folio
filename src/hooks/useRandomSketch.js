@@ -7,6 +7,8 @@ const useRandomSketch = () => {
     if (typeof window !== "undefined") {
       const sketches = [
         "astar.js",
+        "djikstra.js",
+        "bfs.js",
         "rain.js",
         "noise.js",
         "noise2.js",

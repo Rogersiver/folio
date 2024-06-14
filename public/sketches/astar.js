@@ -12,7 +12,7 @@ export default function sketch(p) {
 
   const asciiChars = {
     wall: "#",
-    open: ".",
+    open: " ",
     openSet: "R",
     closedSet: "S",
     path: "█",

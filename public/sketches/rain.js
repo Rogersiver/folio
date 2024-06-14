@@ -1,32 +1,40 @@
-// public/sketches/sketch2.js
 export default function sketch(p) {
-  let asciiChars = 'RSRSRSRSRSRSRSrsrsrsrsrsrsrsrs/|()1{}[]?-_+~<>i!lI;:,"^`.';
+  let asciiChars =
+    'RSRSRSRSRSRSRSRSrsrsrsrsrsrsrsrs/|()1{}[]?-_+~<>i!lI;:,"^`.';
+  let fixedWidth = 1920;
+  let fixedHeight = 1080;
+  let initialSize = fixedWidth / 2;
 
   p.setup = function() {
-    p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(fixedWidth, fixedHeight);
     p.frameRate(60);
     p.textSize(12);
     p.colorMode(p.HSB, 255);
   };
 
-  p.windowResized = function() {
-    p.resizeCanvas(p.windowWidth, p.windowHeight);
-  };
-
   p.draw = function() {
     p.background(0);
-    let maxLevel = 5;
-    let initialSize = p.min(p.width, p.height) / 2;
+    let maxLevel = 6;
 
     for (let x = 0; x < p.width; x += initialSize) {
       for (let y = 0; y < p.height; y += initialSize) {
-        drawSymmetricFractal(x + initialSize / 2, y + initialSize / 2, initialSize, maxLevel);
+        drawSymmetricFractal(
+          x + initialSize / 2,
+          y + initialSize / 2,
+          initialSize,
+          maxLevel,
+        );
       }
     }
 
     for (let x = -initialSize / 2; x < p.width; x += initialSize) {
       for (let y = -initialSize / 2; y < p.height; y += initialSize) {
-        drawSymmetricFractal(x + initialSize / 2, y + initialSize / 2, initialSize, maxLevel);
+        drawSymmetricFractal(
+          x + initialSize / 2,
+          y + initialSize / 2,
+          initialSize,
+          maxLevel,
+        );
       }
     }
   };
@@ -45,7 +53,7 @@ export default function sketch(p) {
     let offset = p.cos(wave + phase);
     let gray = p.map(offset, -1, 1, 10, 235);
 
-    p.fill(30, gray, 255 - (gray * 0.8));
+    p.fill(30, gray, 255 - gray * 0.8);
 
     let charIndex = p.int(p.map(gray, 2, 255, 0, asciiChars.length - 1));
 
@@ -62,4 +70,3 @@ export default function sketch(p) {
     }
   }
 }
-

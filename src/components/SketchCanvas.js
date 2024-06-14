@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import useRandomSketch from '../hooks/useRandomSketch';
-import useClientSide from '../hooks/useClientSide';
-import p5 from 'p5';
+import { useEffect, useRef } from "react";
+import useRandomSketch from "../hooks/useRandomSketch";
+import useClientSide from "../hooks/useClientSide";
+import p5 from "p5";
 
 const SketchCanvas = () => {
   const sketchRef = useRef();
@@ -24,8 +24,17 @@ const SketchCanvas = () => {
     };
   }, [isClient, sketch]);
 
-  return <div ref={sketchRef} style={{ position: 'absolute', width: '100%', height: '100%' }} />;
+  return (
+    <div
+      ref={sketchRef}
+      style={{
+        position: "absolute",
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+      }}
+    />
+  );
 };
 
 export default SketchCanvas;
-

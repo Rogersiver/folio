@@ -1,17 +1,20 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useRandomSketch = () => {
   const [sketch, setSketch] = useState(null);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const sketches = [
-        'astar.js',
-        'rain.js',
-        'tendrils.js',
-        'quadtree.js',
-        'gameoflife.js',
-        'lorenz.js',
+        "astar.js",
+        "rain.js",
+        "noise.js",
+        "noise2.js",
+        "quadtree.js",
+        "gameoflife.js",
+        "lorenz.js",
+        "10print.js",
+        "attractor.js",
       ];
       const randomSketch =
         sketches[Math.floor(Math.random() * sketches.length)];

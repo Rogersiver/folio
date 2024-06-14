@@ -81,7 +81,7 @@ export default function sketch(p) {
           ? p.color(255, 255, 0)
           : p.color(255);
 
-      // Draw a black background for the character
+      // Draw background
       p.fill(0);
       p.noStroke();
       p.rect(
@@ -91,10 +91,21 @@ export default function sketch(p) {
         this.boundary.h,
       );
 
-      // Then draw the character on top
+      // Draw boundary
+      p.stroke(255);
+      p.noFill();
+      p.rect(
+        this.boundary.x,
+        this.boundary.y,
+        this.boundary.w,
+        this.boundary.h,
+      );
+
+      // Draw character
       p.fill(col);
+      p.noStroke();
       p.textAlign(p.CENTER, p.CENTER);
-      p.textSize(this.boundary.w * 0.6); // Set text size based on the boundary width
+      p.textSize(this.boundary.w * 0.6);
       p.text(
         char,
         this.boundary.x + this.boundary.w / 2,
@@ -117,7 +128,7 @@ export default function sketch(p) {
     p.createCanvas(p.windowWidth, p.windowHeight);
     p.background(0);
     resetQuadtree();
-    p.frameRate(); // Faster frame rate for smoother animation
+    p.frameRate(60);
   };
 
   function resetQuadtree() {
@@ -128,20 +139,21 @@ export default function sketch(p) {
 
   p.draw = function() {
     p.background(0);
-    if (p.frameCount % 10 === 0) {
-      // Insert points at variable intervals
+    for (let i = 0; i < 10; i++) {
       let point = new Point(p.random(p.width), p.random(p.height));
       qt.insert(point);
       totalPoints++;
     }
 
-    if (totalPoints > 5000) {
-      // Reset the quadtree when exceeding 1000 points
+    if (totalPoints > 10000) {
       resetQuadtree();
     }
 
     qt.show();
   };
 
-  p.windowResized = function() { };
+  p.windowResized = function() {
+    p.resizeCanvas(p.windowWidth, p.windowHeight);
+    resetQuadtree();
+  };
 }

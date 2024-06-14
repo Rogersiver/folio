@@ -22,16 +22,18 @@ export default function Home() {
       <main style={{ position: "relative", zIndex: 1, padding: "20px" }}>
         <h1
           style={{
-            width: 100,
-            color: "lime",
+            width: "200px",
+            color: "white",
             background: "black",
+            padding: "20px",
             margin: "auto",
+            textAlign: "center",
             overflowX: "hidden",
             overflowY: "hidden",
           }}
         >
           {" "}
-          - RS -{" "}
+          -RS-{" "}
         </h1>
       </main>
     </div>

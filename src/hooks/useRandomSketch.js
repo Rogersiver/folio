@@ -6,10 +6,11 @@ const useRandomSketch = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const sketches = [
+        "flappy.js",
+        "rain.js",
         "astar.js",
         "djikstra.js",
         "bfs.js",
-        "rain.js",
         "noise.js",
         "noise2.js",
         "quadtree.js",
@@ -17,7 +18,6 @@ const useRandomSketch = () => {
         "lorenz.js",
         "10print.js",
         "attractor.js",
-        //"3d.js",
       ];
       const randomSketch =
         sketches[Math.floor(Math.random() * sketches.length)];

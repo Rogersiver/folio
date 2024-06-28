@@ -19,6 +19,7 @@ const useRandomSketch = () => {
         "10print.js",
         "attractor.js",
         "physics.js",
+        "physrain.js",
       ];
       const randomSketch =
         sketches[Math.floor(Math.random() * sketches.length)];

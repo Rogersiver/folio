@@ -6,18 +6,18 @@ const useRandomSketch = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const sketches = [
-        //"flappy.js",
-        //"rain.js",
-        //"astar.js",
-        //"djikstra.js",
-        //"bfs.js",
-        //"noise.js",
-        //"noise2.js",
-        //"quadtree.js",
-        //"gameoflife.js",
-        //"lorenz.js",
-        //"10print.js",
-        //"attractor.js",
+        "flappy.js",
+        "rain.js",
+        "astar.js",
+        "djikstra.js",
+        "bfs.js",
+        "noise.js",
+        "noise2.js",
+        "quadtree.js",
+        "gameoflife.js",
+        "lorenz.js",
+        "10print.js",
+        "attractor.js",
         "physics.js",
       ];
       const randomSketch =
